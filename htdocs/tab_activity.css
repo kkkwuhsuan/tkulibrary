@@ -1,0 +1,83 @@
+.tabs {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid #FFA07A;
+    margin-top: 30px;
+}
+
+.tab {
+    padding: 10px;
+    margin: 5px;
+    color: #333;
+    /* 咖黑色 */
+    border: 2px solid #FFA07A;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s;
+}
+
+.tab:hover {
+    transform: scale(1.1);
+    color: #fff;
+    /* 白色 */
+    background-color: #FF6347;
+    /* 橘色 */
+}
+
+/* 頁籤點擊後顏色 */
+.tab.active1 {
+    color: #fff;
+    /* 白色 */
+    background-color: #FF6347;
+    /* 橘色 */
+}
+
+/* Style for the content */
+.content {
+    display: none;
+    border: 2px solid #FFA07A;
+    padding: 10px;
+    height: 250px;
+    overflow-y: scroll;
+    border-radius: 0 0 10px 10px;
+}
+
+.content.active1 {
+    display: block;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    color: #333;
+    /* 咖黑色 */
+    ;
+    border-bottom: 2px solid #FFA07A;
+    background-color: #f0f0f0;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    color: #333;
+    /* 咖黑色 */
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    transform: scale(1.02);
+    background-color: #F4F1E8;
+    /* 米色 */
+}

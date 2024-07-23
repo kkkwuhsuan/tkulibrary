@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#logo {
+    height: 60px;
+    width: 65px;
+    margin-left: 15px;
+}
+
+#tku-logo {
+    height: 55px;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 40px;
+}
+
+
+.dropdown,
+.link,
+input[type="text"] {
+    position: relative;
+    display: flex;
+    margin: 0px;
+}
+
+/* 下拉選單按鈕＿標題 */
+.dropdown button,
+.sub-dropdown button {
+    height: 70px;
+    width: 130px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #FF6347;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.sub-dropdown button {
+    height: 70px;
+    width: 130px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown button:hover,
+.sub-dropdown button:hover {
+    color: #FF6347;
+    /* 紅色系 */
+}
+
+/* 下拉選單按鈕＿第一層選單 */
+.dropdown-content,
+.sub-dropdown-content {
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 下拉選單按鈕＿第二層選單 */
+.dropdown-content a,
+.sub-dropdown-content a {
+    font-size: 16px;
+    width: 130px;
+    padding: 10px 20px;
+    display: block;
+    color: #FF6347;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover,
+.sub-dropdown-content a:hover {
+    color: #fff;
+    background-color: #FF6347;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content {
+    top: 70%;
+}
+
+/* 將第二層選單定位到其父元素的右側 */
+.sub-dropdown-content {
+    left: 90%;
+    top: 70%;
+}
+
+input[type="text"] {
+    margin-top: 15px;
+}
+
+.search {
+    padding: 10px 15px;
+    color: black;
+
+}
+
+.link {
+    text-decoration: none;
+    color: #FF6347;
+    font-size: 14px;
+    /* 連結的字體大小 */
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    margin-left: 0px;
+}
+
+.link:hover {
+    color: #333;
+}
+
+/* 縮小語言選擇圖標的大小 */
+.icon {
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #logo,
+    .dropdown,
+    .link,
+    input[type="text"] {
+        position: relative;
+        display: flex;
+        margin-bottom: 10px;
+    }
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-content,
+.sub-dropdown-content {
+    z-index: 2;
+}
+
+.dropdown-content a,
+.sub-dropdown-content a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* 將搜尋圖標移至搜尋框的左側 */
+.search-icon {
+    position: absolute;
+    left: 80%;
+}
+
+
+/* 為下拉按鈕的右側加入小倒三角形 */
+.dropdown button::after,
+.sub-dropdown button::after {
+    content: '▼';
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #logo {
+        margin: 10px;
+    }
+
+    .dropdown,
+    .link,
+    input[type="text"] {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .dropdown,
+    .link,
+    input[type="text"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .dropdown button,
+    .sub-dropdown button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,172 @@
+/* 搜尋頁籤css */
+.tablink {
+    display: none;
+}
+
+.tablabel {
+    background-color: #F4F1E8;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 4px solid #fff;
+    ;
+    border-radius: 10px 10px 0px 0px;
+    color: #FF6347;
+    float: left;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+
+}
+
+.tablabel:hover {
+    color: #fff;
+    background-color: #FF6347;
+}
+
+.tablink:checked+.tablabel {
+    color: #fff;
+    background-color: #FF6347;
+}
+
+.tabcontent {
+    color: #333;
+    /* 咖黑色 */
+    display: none;
+    padding: 70px 400px;
+    height: 100%;
+    background-color: #F4F1E8;
+    text-align: center;
+}
+
+.centered-block {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 45px;
+}
+
+#CollectionRadio:checked~#Collection,
+#DatabaseRadio:checked~#Database,
+#RresourceRadio:checked~#Rresource,
+#BorrowRadio:checked~#Borrow {
+    display: block;
+}
+
+select {
+    width: 100px;
+    height: 40px;
+    margin-top: -6px;
+    margin-left: 50px;
+    border: 2px solid #F4F1E8;
+    box-sizing: border-box;
+    background-color: #F4F1E8;
+    ;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* 超連結css */
+.custom-button {
+    display: inline-block;
+    padding: 15px 20px 10px 20px;
+    text-align: center;
+    width: 210px;
+    height: 50px;
+    text-decoration: none;
+    /* 隱藏文字底線 */
+    background-color: #fff;
+    color: #FF6347;
+    border: 2px solid #FF6347;
+    border-radius: 5px;
+    margin: 4px;
+
+}
+
+.custom-button:hover {
+    color: #fff;
+    background-color: #FF6347;
+}
+
+
+
+/* 登入畫面css */
+
+.tabcontent h3 {
+    color: #FF6347;
+    text-align: center;
+}
+
+.login-container {
+    padding: 16px;
+    text-align: center;
+    color: #FF6347;
+}
+
+.login-container label {
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    width: 30%;
+    padding: 12px 8px;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+}
+
+
+/* 搜尋框樣式 */
+.search-box {
+    position: relative;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #FF6347;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.search-box .search-btn {
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    height: calc(100% - 10px);
+    padding: 0 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tablabel {
+        width: 50%;
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .tabcontent {
+        padding: 20px;
+    }
+}

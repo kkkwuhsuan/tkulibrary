@@ -1,0 +1,33 @@
+footer {
+    height: 250px;
+    background-color: #333;
+    color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 150px;
+    border-top-left-radius: 100rem 9rem;
+}
+
+footer a {
+    color: #FF6347;
+    /* Tomato color for links */
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-logo {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+.tab-wrap::after {
+    content: "";
+    display: table;
+    clear: both;
+}
